@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { projects } from "@/data/projects";
-
 const filters = [
   "All",
   "Frontend",
@@ -47,7 +46,7 @@ export default function Projects() {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filtered.map((project) => (
+      {filtered.map((project) => (
           <div
             key={project.title}
             className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-cyan-400 transition"
@@ -59,15 +58,10 @@ export default function Projects() {
             <p className="text-gray-400 mb-5">
               {project.description}
             </p>
-<div className="flex flex-wrap gap-2 mb-4">
-  {project.tech?.map((item) => (
-    <span
-      key={item}
-      className="text-xs px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30"
-    >
-      {item}
-    </span>
-  ))}
+<div className="mb-4">
+  <span className="text-sm text-cyan-400">
+    {project.category}
+  </span>
 </div>
             <a
               href={project.github}
