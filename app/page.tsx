@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import GithubStats from "@/components/GithubStats";
 import Contact from "@/components/Contact";
+import CustomCursor from "@/components/CustomCursor";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Skills />
       <GithubStats />
       <Contact />
+      <CustomCursor />
     </main>
   );
 }
