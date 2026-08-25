@@ -4,8 +4,22 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-<section className="min-h-screen flex items-center justify-center pt-32 bg-[#050816] text-white relative overflow-hidden">
-      <div className="absolute left-0 top-20 w-[500px] h-[500px] bg-cyan-500/10 blur-[150px]" />
+<section
+  className="
+    min-h-screen
+    flex
+    items-center
+    justify-center
+    pt-28
+    pb-16
+    px-5
+    sm:px-6
+    bg-[#050816]
+    text-white
+    relative
+    overflow-hidden
+  "
+>      <div className="absolute left-0 top-20 w-[500px] h-[500px] bg-cyan-500/10 blur-[150px]" />
 
       <div className="absolute right-0 bottom-20 w-[500px] h-[500px] bg-pink-500/10 blur-[150px]" />
 

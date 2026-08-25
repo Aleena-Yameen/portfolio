@@ -28,7 +28,7 @@ export default function CustomCursor() {
 
   return (
     <div
-      className="fixed w-6 h-6 border border-cyan-400 rounded-full pointer-events-none z-[9999]"
+      className="custom-cursor fixed w-6 h-6 border border-cyan-400 rounded-full pointer-events-none z-[9999]"
       style={{
         left: position.x - 12,
         top: position.y - 12,
